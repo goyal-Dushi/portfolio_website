@@ -13,8 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api', apiRoutes);
 
 // Serve Static Frontend (Production)
-// In dev, Vite handles this. In prod, we serve 'dist/client'
-if (process.env.NODE_ENV === 'production' || process.argv.includes('--start-prod')) {
+// In local production, we serve 'dist/client'. 
+// On Vercel, we let Vercel serve static files from the 'dist/client' directory via vercel.json.
+if ((process.env.NODE_ENV === 'production' || process.argv.includes('--start-prod')) && !process.env.VERCEL) {
     const clientPath = path.join(__dirname, '../client');
     app.use(express.static(clientPath));
     
@@ -23,8 +24,12 @@ if (process.env.NODE_ENV === 'production' || process.argv.includes('--start-prod
     });
 }
 
-// Start Server
-app.listen(env.PORT, () => {
-    console.log(`Server running on port ${env.PORT}`);
-    console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
-});
+// Start Server (only if not running on Vercel)
+if (!process.env.VERCEL) {
+    app.listen(env.PORT, () => {
+        console.log(`Server running on port ${env.PORT}`);
+        console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+    });
+}
+
+export default app;
