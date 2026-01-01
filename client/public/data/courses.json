@@ -1,0 +1,95 @@
+{
+  "courseData": [
+    {
+      "id": 1,
+      "id_name": "google_kaggle",
+      "name": "5 day AI Agent course With Google",
+      "badges": [
+        "ADK (Agent Development Kit)",
+        "AI Agent",
+        "AI",
+        "Python"
+      ],
+      "tasks": [
+        "Developed an AI agent using ADK (Agent Development Kit)",
+        "Gained knowledge of various core concets in Python",
+        "Understoo how AI agents can be used to solve real world problems",
+        "Implemented a Criminal Profiling Project using ADK"
+      ],
+      "imgSrc": "/images/skills/kaggle.png",
+      "source": "https://www.kaggle.com/certification/badges/dushyant28/105"
+    },
+    {
+      "id": 2,
+      "id_name": "Cprogramming",
+      "name": "Programming Fundamentals : C",
+      "badges": [
+        "Algorithms",
+        "Programming Language Concepts",
+        "Probelm Solving",
+        "C Programming"
+      ],
+      "tasks": [
+        "Developed algorithms for various problem statements",
+        "Gained knowledge of various core concets in C Programming",
+        "Learned about memory usage and various data types in C"
+      ],
+      "imgSrc": "/images/skills/CourseraCprogram.jpg",
+      "source": "https://coursera.org/share/b04b4ef3f38273a276b0aa5c9aa103c3"
+    },
+    {
+      "id": 3,
+      "id_name": "Static",
+      "name": "Static Website using HTML5 AND CSS3",
+      "badges": [
+        "CSS",
+        "HTML",
+        "Web Design",
+        "Web Page",
+        "Websites"
+      ],
+      "tasks": [
+        "Gained understanding of infrastructure of hosting a website and web browsing",
+        "Created web page contents with HTML (hypertext markup language)",
+        "ustomized the format of web page contents with CSS (cascading style sheets) and hosted it using Github"
+      ],
+      "imgSrc": "/images/skills/CourseraHTML_CSS.jpg",
+      "source": "https://coursera.org/share/c7d08630720a12384837cfbae55b8dda"
+    },
+    {
+      "id": 4,
+      "id_name": "OOPS",
+      "name": "Coursera : OOPS Concepts Using Java",
+      "badges": [
+        "OOP (Object Oriented Programming)",
+        "Software Engineering",
+        "Software Development",
+        "Java"
+      ],
+      "tasks": [
+        "Gained understanding of four principles of object oriented programming paradigm.",
+        "Developed applications with graphical user interface"
+      ],
+      "imgSrc": "/images/skills/CourseraJava.jpg",
+      "source": "https://coursera.org/share/5952ab8da98bbebab48c3ef1ef6ac0ee"
+    },
+    {
+      "id": 5,
+      "id_name": "JS",
+      "name": "Modern JavaScript: ES6 Basics",
+      "badges": [
+        "Computer Programming",
+        "ES6",
+        "Javasctipt",
+        "Front-end web"
+      ],
+      "tasks": [
+        "Understood the major features of ES6.",
+        "Applied ES6 in practical situations.",
+        "Learned how to fix every problem caused by this."
+      ],
+      "imgSrc": "/images/skills/ES6_js.jpg",
+      "source": "https://coursera.org/share/346d31785845973675b3cf75a95c9649"
+    }
+  ]
+}

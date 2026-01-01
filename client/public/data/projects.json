@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "heading": "Block Maps",
+            "date": "23 Oct 2024",
+            "description": "QR-based web app featuring a custom routing algorithm that adapts to dynamic gate schedules, helping people navigate easily in my locality",
+            "imgSrc": "/images/projects/block-maps.gif",
+            "tech": [
+                {
+                    "src": "/images/icons/react.png",
+                    "title": "React"
+                }
+            ],
+            "linkTo": "https://block-maps.vercel.app/map"
+        },
+        {
+            "id": 2,
+            "heading": "LibCompare",
+            "date": "4 Jan 2022",
+            "description": "A static website to help Frontend Developers compare and evaluate various frontend styling/component libraries that could be used with React.",
+            "imgSrc": "/images/projects/libcompare.gif",
+            "tech": [
+                {
+                    "src": "/images/icons/react.png",
+                    "title": "React"
+                }
+            ],
+            "linkTo": "https://libcompare.vercel.app/"
+        },
+        {
+            "id": 3,
+            "heading": "Advice Generator",
+            "date": "13 April 2022",
+            "description": "A website to that generates random advice on every click",
+            "imgSrc": "/images/projects/advice-generator.jpg",
+            "tech": [
+                {
+                    "src": "/images/icons/react.png",
+                    "title": "React"
+                }
+            ],
+            "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/adviceGenerator"
+        },
+        {
+            "id": 4,
+            "heading": "Rock, Paper and Scissor Game",
+            "date": "26 August 2022",
+            "description": "A fun rock-paper-scissor game reimagined on the web.",
+            "imgSrc": "/images/projects/rps-game.jpg",
+            "tech": [
+                {
+                    "src": "/images/icons/react.png",
+                    "title": "React"
+                }
+            ],
+            "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/rpsGamePage"
+        },
+        {
+            "id": 5,
+            "heading": "Splitter",
+            "date": "21 October 2022",
+            "description": "A Splitter web app to split the bill between friends.",
+            "imgSrc": "/images/projects/tip_calculator.jpg",
+            "tech": [
+                {
+                    "src": "/images/icons/react.png",
+                    "title": "React"
+                }
+            ],
+            "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/tipGenerator"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "imgSrc": "/images/icons/adk.png",
+    "name": "ADK"
+  },
+  {
+    "imgSrc": "/images/icons/react.png",
+    "name": "React"
+  },
+  {
+    "imgSrc": "/images/icons/nodejs.png",
+    "name": "Nodejs"
+  },
+  {
+    "imgSrc": "/images/icons/python.png",
+    "name": "Python"
+  },
+  {
+    "imgSrc": "/images/icons/typescript.png",
+    "name": "Typescript"
+  },
+  {
+    "imgSrc": "/images/icons/javascript.webp",
+    "name": "Javascript"
+  },
+  {
+    "imgSrc": "/images/icons/redux.png",
+    "name": "Redux"
+  },
+  {
+    "imgSrc": "/images/icons/html.webp",
+    "name": "HTML-5"
+  },
+  {
+    "imgSrc": "/images/icons/css.webp",
+    "name": "CSS-3"
+  },
+  {
+    "imgSrc": "/images/icons/sass.png",
+    "name": "SASS"
+  },
+  {
+    "imgSrc": "/images/icons/bootstrap2.jpg",
+    "name": "Bootstrap"
+  },
+  {
+    "imgSrc": "/images/icons/mui.webp",
+    "name": "MaterialUI"
+  },
+  {
+    "imgSrc": "/images/icons/selenium.webp",
+    "name": "Selenium-Webdriver-(Automation)"
+  },
+  {
+    "imgSrc": "/images/icons/cucumber.webp",
+    "name": "Cucumberjs"
+  },
+  {
+    "imgSrc": "/images/icons/c2.jpg",
+    "name": "C-Programming"
+  }
+]
