@@ -12,13 +12,15 @@ export class GoogleAuthService {
     );
 
     // Debugging Env loading
-    console.log('Google Auth Config Check:', {
-        hasUser: !!env.EMAIL.USER,
-        hasClientId: !!env.EMAIL.CLIENT_ID,
-        hasClientSecret: !!env.EMAIL.CLIENT_SECRET,
-        hasRefreshToken: !!env.EMAIL.REFRESH_TOKEN,
-        redirectUri: env.EMAIL.REDIRECT_URI
-    });
+    if (process.env.NODE_ENV !== 'production') {
+        console.log('Google Auth Config Check:', {
+            hasUser: !!env.EMAIL.USER,
+            hasClientId: !!env.EMAIL.CLIENT_ID,
+            hasClientSecret: !!env.EMAIL.CLIENT_SECRET,
+            hasRefreshToken: !!env.EMAIL.REFRESH_TOKEN,
+            redirectUri: env.EMAIL.REDIRECT_URI
+        });
+    }
 
     // Set the credentials immediately since we have the refresh token
     if (env.EMAIL.REFRESH_TOKEN) {

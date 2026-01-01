@@ -7,7 +7,6 @@ export const env = {
   PORT: process.env.PORT || 8080,
   EMAIL: {
     USER: process.env.EMAIL,
-    PASS: process.env.MAIL_PWD,
     HOST: process.env.MAIL_HOST || 'smtp.gmail.com',
     PORT: parseInt(process.env.MAIL_PORT || '587'),
     CLIENT_ID: process.env.GMAIL_CLIENT_ID,
