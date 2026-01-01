@@ -1,55 +1,98 @@
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Contribution](#contribution)
+# Portfolio Modernization Project
 
-## General info
-This is a my personal portfolio website. <br/>
-## **Please don't just fork the repo, do leave a star &#x272F;**
+A fully modernized, responsive portfolio website built with a split architecture: **Vite + TypeScript** for the frontend and **Express + TypeScript** for the backend.
 
+## ✨ Features
 
-## Technologies
-Project is created with:
-* HTML5
-* CSS3 and SASS
-* Javascript
-* Node with Express
+- **Modern UI/UX**: Dark theme with glassmorphism, glowing badges, and smooth CSS transitions.
+- **Merged Portfolio View**: Combined Home and About sections for a seamless landing experience.
+- **Dynamic Content**: Projects, Skills, Certifications, and Activities are dynamically rendered from JSON data via a dedicated API.
+- **Responsive Design**: Mobile-first approach featuring a slide-out hamburger menu and adaptive grid layouts.
+- **OAuth2 Email System**: Secure contact form powered by Gmail OAuth2 and Nodemailer.
+- **Interactive Modals**: Enhanced modal dialogues with zoom functionality for viewing certificates and activities.
+- **Clean Architecture**: Clear separation of concerns between client and server codebases.
 
-	
-## Setup
-To run this project, install it locally using npm:
-Copy and paste the following list of commands to get started after forking the project <br/>
+## 🛠️ Technologies
 
-`git clone https://github.com/goyal-Dushi/CV.git`
+### Frontend
 
-The above command will initialize a local remote **origin** by default and a branch named **main/master** <br/>
-cd over to the dir where you have cloned the repo and checkout to the new branch in order to perform your changes <br />
+- **Framework**: Vite
+- **Language**: TypeScript
+- **Styling**: SCSS (Sass) / CSS Grid / Flexbox
+- **Assets**: Handled via Vite's optimized build pipeline
 
-`git checkout -b name-of-your-branch/change`
+### Backend
 
-Then run the following code to install all the dependencies <br/>
-`npm install` 
+- **Framework**: Express.js
+- **Language**: TypeScript
+- **Email**: Nodemailer + Google OAuth2 (`googleapis`)
+- **Config**: Environment variables with `dotenv`
 
-Since the project make use of sass, make sure you have the sass compiler installed
-If not, install from the link below <br/>
-https://sass-lang.com/install
+## 🚀 Getting Started
 
-After installing, run the sass compiler using the following command <br/> 
-`sass --watch ./public/sass/index.scss:./public/css/index.css`
+### Prerequisites
 
-or cd over to the sass dir and then run the command <br/>
-`sass --watch index.scss: ../css/index.css`
+- Node.js (v18+ recommended)
+- npm (v9+)
 
-This will run the sass compiler for you so that the styles get loaded in the index.css file
+### Installation
 
-Finally , run the project either throught live-server or using the following command <br/>
-`nodemon app.js` : For automatic reload of the server on detecting changes 
-or <br/>
-`node app.js`
+1. Clone the repository:
 
-## Contribution
-1) Fork the repo 
-2) Clone it to your local file system
-3) Make your changes and generate a pull request 
-4) Please raise a issue first if working on any new feature
+   ```bash
+   git clone https://github.com/goyal-Dushi/CV.git
+   cd portfolio_website
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Configure Environment Variables:
+   Create a `.env` file in the project root with the following keys:
+   ```env
+   PORT=8080
+   EMAIL=your-gmail@gmail.com
+   GMAIL_CLIENT_ID=your-client-id
+   GMAIL_CLIENT_SECRET=your-client-secret
+   GMAIL_REFRESH_TOKEN=your-refresh-token
+   GMAIL_REDIRECT_URI=https://developers.google.com/oauthplayground
+   ```
+
+### Development
+
+Run both the frontend and backend in development mode:
+
+```bash
+npm run dev
+```
+
+### Production Build
+
+Build and start the project for production:
+
+```bash
+npm run build
+npm start
+```
+
+## 📂 Project Structure
+
+- `client/`: Frontend source code (TypeScript, SCSS, HTML).
+- `client/public/`: Static assets and JSON data files.
+- `src/`: Backend source code (Express routes, services, and config).
+- `dist/`: Compiled production build (generated).
+
+## 🤝 Contribution
+
+1. Fork the repo.
+2. Create a feature branch (`git checkout -b feature/NewFeature`).
+3. Commit your changes (`git commit -m 'Add NewFeature'`).
+4. Push to the branch (`git push origin feature/NewFeature`).
+5. Open a Pull Request.
+
+---
+
+**Please don't just fork the repo, do leave a star ⭐**
