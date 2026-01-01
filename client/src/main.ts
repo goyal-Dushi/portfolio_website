@@ -2,6 +2,10 @@ import { initNavigation } from './modules/navigation';
 import { initDataLoader } from './modules/dataLoader';
 import { initModals } from './modules/modals';
 import { initContactForm } from './modules/contact';
+import { inject } from '@vercel/analytics';
+
+// Initialize Analytics
+inject();
 
 // Initialize Modules
 document.addEventListener('DOMContentLoaded', () => {
