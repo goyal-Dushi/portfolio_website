@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
 
 :root {
     --bg-color: #121212; // Slightly lighter black
@@ -6,6 +5,8 @@
     --primary-color: #6c5ce7;
     --secondary-color: #a29bfe;
     --accent-color: #00cec9;
+    --danger-color: #ff4757;
+    --success-color: #85efb1;
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
     --font-main: 'Outfit', sans-serif;
@@ -68,7 +69,7 @@ main { flex: 1; margin-top: 80px; position: relative; }
         
         .hero-content {
             flex: 1; padding-right: 2rem; z-index: 2;
-            h1 { font-size: 4rem; margin-bottom: 0.5rem; background: linear-gradient(45deg, var(--text-color), var(--primary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+            h1 { font-size: 4rem; margin-bottom: 0.5rem; background: linear-gradient(45deg, var(--text-color), var(--primary-color)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
             .subtitle { font-size: 1.5rem; color: var(--secondary-color); margin-bottom: 1.5rem; }
             .about-summary { margin-bottom: 2rem; p { font-size: 1.1rem; max-width: 600px; opacity: 1; color: var(--text-color); } } // Explicit opacity and color
             
@@ -140,20 +141,31 @@ main { flex: 1; margin-top: 80px; position: relative; }
 
 // 5. Projects/Certs (Grid Layout Desktop & Mobile)
 .projects-grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); // Max width 350px per card logic via grid
-    justify-content: center; gap: 2rem; padding: 1rem 1rem 2rem 1rem;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 2rem; 
+    padding: 1rem 1rem 2rem 1rem;
+    align-items: start;
     
     // Remove Scroll Logic
-    overflow-x: visible; scroll-snap-type: none;
+    overflow-x: visible; 
+    scroll-snap-type: none;
     &::-webkit-scrollbar { display: none; }
 }
 
 .project-card {
-    width: 100%; max-width: 350px; // Enforce Max Width
-    height: 100%; 
-    display: flex; flex-direction: column; align-items: flex-start; text-align: left; 
-    background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 16px; padding: 1.5rem;
+    width: 100%; 
+    max-width: 350px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left; 
+    background: var(--glass-bg); 
+    border: 1px solid var(--glass-border); 
+    border-radius: 16px; 
+    padding: 1.5rem;
     transition: var(--transition);
     
     .card-image {
@@ -167,26 +179,78 @@ main { flex: 1; margin-top: 80px; position: relative; }
     h3 { margin-bottom: 0.2rem; color: var(--primary-color); width: 100%; } 
     
     // Project specific styles (applied via generic class or specific)
-    .project-date { font-size: 0.85rem; color: var(--secondary-color); margin-bottom: 1rem; } 
-    .project-desc { font-size: 0.95rem; margin-bottom: 1.5rem; opacity: 0.9; line-height: 1.6; flex-grow: 1; }
+    .project-date { font-size: 0.85rem; color: var(--secondary-color); margin-bottom: 0.5rem; } 
+
+    .project-problem, .project-solution {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+        opacity: 0.85;
+        line-height: 1.4;
+        
+        strong { 
+            color: var(--danger-color); 
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 4px;
+        }
+
+        &.project-solution strong {
+            color: var(--success-color);
+        }
+
+        .problem-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: var(--transition);
+            
+            &.expanded {
+                -webkit-line-clamp: unset;
+                line-clamp: unset;
+                display: block;
+            }
+        }
+
+        .read-more-btn {
+            color: var(--primary-color);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 4px;
+            &:hover { text-decoration: underline; }
+        }
+    }
+    
+    .project-desc { 
+        display: none; // No longer used as project-solution is used instead
+    }
     
     // Tech Stack (Added explicitly here for consistency)
     .tech-stack {
         display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap;
         .tech-badge {
             width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.05); 
-            border: 1px solid var(--glass-border); padding: 5px; 
+            border: 1px solid var(--glass-border); padding: 2px; 
             display: flex; align-items: center; justify-content: center;
-            img { width: 100%; height: 100%; object-fit: contain; }
+            img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
             &:hover { border-color: var(--primary-color); transform: scale(1.1); }
         }
     }
 
     .details-btn { 
-        margin-top: auto; padding: 0.5rem 1.2rem; 
-        border: 1px solid var(--primary-color); color: var(--primary-color); 
-        background: transparent; border-radius: 4px; cursor: pointer; 
-        text-decoration: none; display: inline-block; // No underline
+        padding: 0.5rem 1.2rem; 
+        border: 1px solid var(--primary-color); 
+        color: var(--primary-color); 
+        background: transparent; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        text-decoration: none; 
+        display: inline-block; 
         &:hover { background: var(--primary-color); color: #fff; } 
     }
 
