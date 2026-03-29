@@ -4,6 +4,14 @@
     "name": "ADK"
   },
   {
+    "imgSrc": "/images/icons/aws.png",
+    "name": "AWS"
+  },
+  {
+    "imgSrc": "/images/icons/tailwind.jpeg",
+    "name": "Tailwind CSS"
+  },
+  {
     "imgSrc": "/images/icons/react.png",
     "name": "React"
   },
@@ -32,7 +40,7 @@
     "name": "HTML-5"
   },
   {
-    "imgSrc": "/images/icons/css.webp",
+    "imgSrc": "/images/icons/css.png",
     "name": "CSS-3"
   },
   {

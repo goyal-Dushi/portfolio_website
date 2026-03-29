@@ -2,31 +2,39 @@
     "projects": [
         {
             "id": 1,
-            "heading": "Block Maps",
-            "date": "23 Oct 2024",
-            "description": "QR-based web app featuring a custom routing algorithm that adapts to dynamic gate schedules, helping people navigate easily in my locality",
-            "imgSrc": "/images/projects/block-maps.gif",
+            "heading": "Splitter",
+            "date": "21 October 2022",
+            "description": "A Splitter web app to split the bill between friends.",
+            "imgSrc": "/images/projects/tip_calculator.jpg",
             "tech": [
                 {
                     "src": "/images/icons/react.png",
                     "title": "React"
+                },
+                {
+                    "title": "Bootstrap",
+                    "src": "/images/icons/bootstrap2.jpg"
                 }
             ],
-            "linkTo": "https://block-maps.vercel.app/map"
+            "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/tipGenerator"
         },
         {
             "id": 2,
-            "heading": "LibCompare",
-            "date": "4 Jan 2022",
-            "description": "A static website to help Frontend Developers compare and evaluate various frontend styling/component libraries that could be used with React.",
-            "imgSrc": "/images/projects/libcompare.gif",
+            "heading": "Rock, Paper and Scissor Game",
+            "date": "26 August 2022",
+            "description": "A fun rock-paper-scissor game reimagined on the web.",
+            "imgSrc": "/images/projects/rps-game.jpg",
             "tech": [
                 {
                     "src": "/images/icons/react.png",
                     "title": "React"
+                },
+                {
+                    "title": "Bootstrap",
+                    "src": "/images/icons/bootstrap2.jpg"
                 }
             ],
-            "linkTo": "https://libcompare.vercel.app/"
+            "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/rpsGamePage"
         },
         {
             "id": 3,
@@ -38,37 +46,98 @@
                 {
                     "src": "/images/icons/react.png",
                     "title": "React"
+                },
+                {
+                    "title": "Bootstrap",
+                    "src": "/images/icons/bootstrap2.jpg"
                 }
             ],
             "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/adviceGenerator"
         },
         {
             "id": 4,
-            "heading": "Rock, Paper and Scissor Game",
-            "date": "26 August 2022",
-            "description": "A fun rock-paper-scissor game reimagined on the web.",
-            "imgSrc": "/images/projects/rps-game.jpg",
+            "heading": "LibCompare",
+            "date": "4 Jan 2022",
+            "problem": "There are lot of UI lib out there, which have their pros & cons. But, in order to understand them, we have to load their documentations, read them, and then, remember their components, props, etc. Which is very time consuming.",
+            "description": "A static website to help Frontend Developers compare and evaluate various frontend styling/component libraries that could be used with React.",
+            "imgSrc": "/images/projects/libcompare.gif",
             "tech": [
                 {
                     "src": "/images/icons/react.png",
                     "title": "React"
+                },
+                {
+                    "src": "/images/icons/javascript.webp",
+                    "title": "Javascript"
+                },
+                {
+                    "src": "/images/icons/css.png",
+                    "title": "CSS"
+                },
+                {
+                    "title": "Bootstrap",
+                    "src": "/images/icons/bootstrap2.jpg"
+                },
+                {
+                    "src": "/images/icons/mui.webp",
+                    "title": "MUI"
                 }
             ],
-            "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/rpsGamePage"
+            "linkTo": "https://libcompare.vercel.app/"
         },
         {
             "id": 5,
-            "heading": "Splitter",
-            "date": "21 October 2022",
-            "description": "A Splitter web app to split the bill between friends.",
-            "imgSrc": "/images/projects/tip_calculator.jpg",
+            "heading": "Block Maps",
+            "date": "23 Oct 2024",
+            "problem": "Users face a lot of issue navigating within my block, especially finding specific house number from their current locations. The google maps currently is able to guide them to nearest Point of Interest, but not to exact house. Which is what I tried to solve!",
+            "description": "QR-based web app featuring a custom routing algorithm that adapts to dynamic gate schedules, helping people navigate easily in my locality, finding exact house numbers.",
+            "imgSrc": "/images/projects/block-maps.gif",
             "tech": [
                 {
                     "src": "/images/icons/react.png",
                     "title": "React"
+                },
+                {
+                    "src": "/images/icons/typescript.png",
+                    "title": "Typescript"
+                },
+                {
+                    "src": "/images/icons/sass.png",
+                    "title": "SCSS"
                 }
             ],
-            "linkTo": "https://goyal-dushi.github.io/frontend-designs/#/tipGenerator"
+            "linkTo": "https://block-maps.vercel.app/map"
+        },
+        {
+            "id": 6,
+            "heading": "Docs Drive",
+            "date": "27 Mar 2026",
+            "problem": "Managing invoices, warranties, and product documents is highly fragmented. Important details like model number, serial number, purchase date, warranty period, and pricing often remain buried inside PDFs or images, making retrieval and tracking difficult for users.",
+            "description": "AI-powered document intelligence platform that extracts, organizes, and enables chat-based retrieval of invoice and warranty data using OCR, Amazon Bedrock, vector search, and real-time WebSocket streaming.",
+            "imgSrc": "/images/projects/docdrive.gif",
+            "tech": [
+                {
+                    "src": "/images/icons/react.png",
+                    "title": "React"
+                },
+                {
+                    "src": "/images/icons/typescript.png",
+                    "title": "Typescript"
+                },
+                {
+                    "src": "/images/icons/tailwind.jpeg",
+                    "title": "Tailwind CSS"
+                },
+                {
+                    "src": "/images/icons/nodejs.png",
+                    "title": "Node.js"
+                },
+                {
+                    "src": "/images/icons/aws.png",
+                    "title": "AWS"
+                }
+            ],
+            "linkTo": "https://docsdrive.vercel.app"
         }
     ]
 }
