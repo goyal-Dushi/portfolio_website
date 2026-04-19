@@ -2,6 +2,7 @@ import { initNavigation } from './modules/navigation';
 import { initDataLoader } from './modules/dataLoader';
 import { initModals } from './modules/modals';
 import { initContactForm } from './modules/contact';
+import { initResumeDownload } from './modules/downloadResume';
 import { inject } from '@vercel/analytics';
 
 // Initialize Analytics
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initDataLoader();
     initModals();
     initContactForm();
+    initResumeDownload();
 
     // Footer Year
     const yearEl = document.getElementById('year');

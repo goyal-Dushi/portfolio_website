@@ -1,15 +1,9 @@
 import { Router, Request, Response } from 'express';
-import path from 'path';
 import { dataService } from '../services/dataService';
 import { emailService } from '../services/emailService';
 
 const router = Router();
 
-// Download Route
-router.get('/download', (req: Request, res: Response) => {
-    const filePath = path.join(process.cwd(), 'upload_folder', 'Resume.pdf');
-    res.download(filePath, 'Dushyant_Resume.pdf');
-});
 
 // Data Route
 router.get('/data/:filename', async (req: Request, res: Response) => {
