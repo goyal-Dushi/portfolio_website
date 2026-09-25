@@ -1,0 +1,17 @@
+# Dushyant Goyal
+
+Dushyant Goyal is a software engineer in Noida, Uttar Pradesh, India. He builds full-stack web applications and ships personal products under the dgwebdex brand.
+
+- Canonical site: https://dushyantgoyal.dgwebdex.com/
+- Brand: dgwebdex (https://dgwebdex.com)
+- GitHub: https://github.com/goyal-Dushi
+- LinkedIn: https://www.linkedin.com/in/dushyant-goyal
+- LeetCode: https://leetcode.com/goyal_Dushyant/
+
+## Selected work
+
+- Docs Drive — https://docsdrive.dgwebdex.com — AI-powered document intelligence for invoices and warranties (OCR, Amazon Bedrock, vector search, WebSockets).
+- Block Maps — https://block-maps.vercel.app/map — QR-based routing for exact house numbers in a residential block.
+- LibCompare — https://libcompare.vercel.app/ — Compare React UI / styling libraries.
+
+Skills include React, TypeScript, JavaScript, Node.js, Python, AWS, Tailwind CSS, and related full-stack web technologies.

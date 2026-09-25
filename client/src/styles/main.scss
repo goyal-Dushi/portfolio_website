@@ -186,6 +186,11 @@ main {
                     max-width: 600px;
                     opacity: 1;
                     color: var(--text-color);
+
+                    a {
+                        color: var(--primary-color);
+                        text-decoration: underline;
+                    }
                 }
             }
 
@@ -328,6 +333,18 @@ main {
 
     &::-webkit-scrollbar {
         display: none;
+    }
+}
+
+.projects-crawl-list {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 0 1rem 1rem;
+    text-align: left;
+    line-height: 1.6;
+
+    a {
+        color: var(--primary-color);
     }
 }
 
@@ -788,4 +805,9 @@ footer {
     text-align: center;
     border-top: 1px solid var(--glass-border);
     margin-top: auto;
+
+    a {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
 }
